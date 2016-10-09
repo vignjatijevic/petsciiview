@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PETSCIIView">
+
+        <attr name="pet_attrScreenWidth" format="integer"/>
+        <attr name="pet_attrScreenHeight" format="integer"/>
+        <attr name="pet_attrFontSize" format="integer"/>
+        <attr name="pet_attrBorderSizeLeft" format="integer"/>
+        <attr name="pet_attrBorderSizeTop" format="integer"/>
+        <attr name="pet_attrBorderSizeRight" format="integer"/>
+        <attr name="pet_attrBorderSizeBottom" format="integer"/>
+        <attr name="pet_attrBorderColor" format="integer"/>
+        <attr name="pet_attrBackgroundColor" format="integer"/>
+        <attr name="pet_attrCursorColor" format="integer"/>
+        <attr name="pet_attrTestPicture" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>
