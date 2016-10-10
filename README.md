@@ -12,6 +12,16 @@
 
 
 # Usage
+For a simple implementation of the library see the `sample/` folder.
+
+Adding *PETSCII View* to project:
+
+**build.gradle**
+```XML
+dependencies {
+    compile 'org.garageapps:petsciiview:1.0.0'
+}
+```
 
 Adding *PETSCII View* to layout:
 
@@ -124,6 +134,13 @@ Here is a list of all supported formatters:
 
 Like already mentioned, *PETSCII View* uses two buffers. Both buffers can be enabled or disabled programatically during runtime. To turn off the screen buffer, `setScreenRamEnabled` must be called with the appropriate parameter and then only the border will be visible (the C64 uses this feature when accessing the datasette). To turn off the color buffer, `setColorRamEnabled` must be called and then all text on screen will be shown using only the current cursor color. There are also two additional methods for quickly clearing each of the buffers (completely or just a portion) with a specific character or color. These methods are `fillWithChar` and `fillWithColor`.
 
+```JAVA
+// fill whole screen with a character
+pv.fillWithChar('A');
+
+// fill upper left portion of the screen with red color
+pv.fillWithColor(2, 0, 0, pv.getScreenWidth / 2, pv.getScreenHeight / 2);
+```
 
 
 # Changelog
